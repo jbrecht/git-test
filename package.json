@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "conventional-changelog-cli": "^1.2.0"
+  },
+  "devDependencies": {
+    "standard-version": "^3.0.0"
   }
 }

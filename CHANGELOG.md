@@ -1,5 +1,5 @@
-# 1.0.0 - 10/25/2016
+<a name="1.0.0"></a>
+# 1.0.0 (2016-10-25)
 
-## Features
- - new repo
- - to test out git
+
+
