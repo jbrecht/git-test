@@ -1,3 +1,4 @@
+this is a bug fix
 this change is a new feature
 this is not an important change
 This is a new feature woo
