@@ -1,94 +1,29 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/usr/local/Cellar/node/4.2.1/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'publish' ]
+1 verbose cli   'version',
+1 verbose cli   'minor' ]
 2 info using npm@3.4.0
 3 info using node@v4.2.1
-4 verbose publish [ '.' ]
-5 silly cache add args [ '.', null ]
-6 verbose cache add spec .
-7 silly cache add parsed spec Result {
-7 silly cache add   raw: '.',
-7 silly cache add   scope: null,
-7 silly cache add   name: null,
-7 silly cache add   rawSpec: '.',
-7 silly cache add   spec: '/Users/JohnBrecht/dev/git-test',
-7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /Users/JohnBrecht/.npm/git-test/1.1.0/package.tgz not in flight; packing
-9 info lifecycle git-test@1.1.0~prepublish: git-test@1.1.0
-10 silly lifecycle git-test@1.1.0~prepublish: no script for prepublish, continuing
-11 verbose tar pack [ '/Users/JohnBrecht/.npm/git-test/1.1.0/package.tgz',
-11 verbose tar pack   '/Users/JohnBrecht/dev/git-test' ]
-12 verbose tarball /Users/JohnBrecht/.npm/git-test/1.1.0/package.tgz
-13 verbose folder /Users/JohnBrecht/dev/git-test
-14 verbose addLocalTarball adding from inside cache /Users/JohnBrecht/.npm/git-test/1.1.0/package.tgz
-15 silly cache afterAdd git-test@1.1.0
-16 verbose afterAdd /Users/JohnBrecht/.npm/git-test/1.1.0/package/package.json not in flight; writing
-17 verbose afterAdd /Users/JohnBrecht/.npm/git-test/1.1.0/package/package.json written
-18 silly publish { name: 'git-test',
-18 silly publish   version: '1.1.0',
-18 silly publish   description: 'testing out git',
-18 silly publish   main: 'index.js',
-18 silly publish   scripts:
-18 silly publish    { test: 'echo "Error: no test specified" && exit 1',
-18 silly publish      release: 'standard-version' },
-18 silly publish   author: '',
-18 silly publish   license: 'ISC',
-18 silly publish   dependencies: { 'conventional-changelog-cli': '^1.2.0' },
-18 silly publish   devDependencies: { 'standard-version': '^3.0.0' },
-18 silly publish   gitHead: '9ab9dcd0ce00da380643c19d3401f8bea419dbd2',
-18 silly publish   readme: 'ERROR: No README data found!',
-18 silly publish   _id: 'git-test@1.1.0',
-18 silly publish   _shasum: '73cc8d4d0f2690c97a55fc773d44841ec359cbfe',
-18 silly publish   _from: '.' }
-19 verbose getPublishConfig undefined
-20 silly mapToRegistry name git-test
-21 silly mapToRegistry using default registry
-22 silly mapToRegistry registry https://registry.npmjs.org/
-23 silly mapToRegistry uri https://registry.npmjs.org/git-test
-24 verbose publish registryBase https://registry.npmjs.org/
-25 silly publish uploading /Users/JohnBrecht/.npm/git-test/1.1.0/package.tgz
-26 verbose request uri https://registry.npmjs.org/git-test
-27 verbose request sending authorization for write operation
-28 info attempt registry request try #1 at 4:49:34 PM
-29 verbose request using bearer token for auth
-30 verbose request id 8df3b195ee77b13e
-31 http request PUT https://registry.npmjs.org/git-test
-32 http 403 https://registry.npmjs.org/git-test
-33 verbose headers { 'content-type': 'application/json',
-33 verbose headers   'cache-control': 'max-age=300',
-33 verbose headers   'content-length': '102',
-33 verbose headers   'accept-ranges': 'bytes',
-33 verbose headers   date: 'Tue, 25 Oct 2016 23:49:34 GMT',
-33 verbose headers   via: '1.1 varnish',
-33 verbose headers   connection: 'keep-alive',
-33 verbose headers   'x-served-by': 'cache-sea1927-SEA',
-33 verbose headers   'x-cache': 'MISS',
-33 verbose headers   'x-cache-hits': '0',
-33 verbose headers   'x-timer': 'S1477439374.662531,VS0,VE71',
-33 verbose headers   vary: 'Accept-Encoding' }
-34 verbose request invalidating /Users/JohnBrecht/.npm/registry.npmjs.org/git-test on PUT
-35 error publish Failed PUT 403
-36 verbose stack Error: you do not have permission to publish "git-test". Are you logged in as the correct user? : git-test
-36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
-36 verbose stack     at emitTwo (events.js:87:13)
-36 verbose stack     at Request.emit (events.js:172:7)
-36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
-36 verbose stack     at emitOne (events.js:82:20)
-36 verbose stack     at Request.emit (events.js:169:7)
-36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
-37 verbose statusCode 403
-38 verbose pkgid git-test
-39 verbose cwd /Users/JohnBrecht/dev/git-test
-40 error Darwin 15.6.0
-41 error argv "/usr/local/Cellar/node/4.2.1/bin/node" "/usr/local/bin/npm" "publish"
-42 error node v4.2.1
-43 error npm  v3.4.0
-44 error code E403
-45 error you do not have permission to publish "git-test". Are you logged in as the correct user? : git-test
-46 error If you need help, you may report this error at:
-46 error     <https://github.com/npm/npm/issues>
-47 verbose exit [ 1, true ]
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack M  npm-debug.log
+5 verbose stack     at /usr/local/lib/node_modules/npm/lib/version.js:172:21
+5 verbose stack     at ChildProcess.exithandler (child_process.js:194:7)
+5 verbose stack     at emitTwo (events.js:87:13)
+5 verbose stack     at ChildProcess.emit (events.js:172:7)
+5 verbose stack     at maybeClose (internal/child_process.js:818:16)
+5 verbose stack     at Socket.<anonymous> (internal/child_process.js:319:11)
+5 verbose stack     at emitOne (events.js:77:13)
+5 verbose stack     at Socket.emit (events.js:169:7)
+5 verbose stack     at Pipe._onclose (net.js:469:12)
+6 verbose cwd /Users/JohnBrecht/dev/git-test
+7 error Darwin 15.6.0
+8 error argv "/usr/local/Cellar/node/4.2.1/bin/node" "/usr/local/bin/npm" "version" "minor"
+9 error node v4.2.1
+10 error npm  v3.4.0
+11 error Git working directory not clean.
+11 error M  npm-debug.log
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
