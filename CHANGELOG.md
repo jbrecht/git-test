@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/jbrecht/git-test/compare/v1.1.0...v1.2.0) (2016-10-26)
+
+
+### Bug Fixes
+
+* **test:** fixed some test stuff ([cafabde](https://github.com/jbrecht/git-test/commit/cafabde))
+
+
+### Features
+
+* **test:** added a new feature to test ([bea90b4](https://github.com/jbrecht/git-test/commit/bea90b4))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/jbrecht/git-test/compare/v1.0.3...v1.1.0) (2016-10-25)
 
